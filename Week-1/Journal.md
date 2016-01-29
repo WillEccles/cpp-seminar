@@ -49,4 +49,4 @@ The first line defines a string called input where we will store the user input.
 
 ## How to view my sample program:
 
-If you simply click on this link, you will be taken to a folder containing the code for the program.
+If you simply click on [this link](https://github.com/WillEccles/cpp-seminar/tree/master/Week-1/Sample-Code), you will be taken to a folder containing the code for the program.
