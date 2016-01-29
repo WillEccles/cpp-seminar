@@ -14,7 +14,7 @@ This week, I learned about two basic concepts, standard in and standard out. I m
 
 ### Standard Out - Printing to the console
 
-This is a very simple concept. First of all, under your `#include`s, you can put `using namespace std;`. This means that you can just say things like `cout` and `cin` and `string` without using `std::` before it. Since best practice is to use `std::` before everything, I did it this week. However, in the future, I will not be doing that. I will just use `namespace std`. Keep that in mind.
+This is a very simple concept. First of all, under your `#include`s, you can put `using namespace std;`. This means that you can just say things like `cout` and `cin` and `string` without using `std::` before it. Since best practice is to use `std::` before everything, I did it this week. However, in the future, I will not be doing that. I will just use `namespace std`. Keep that in mind. Also, during this journal, I will not use `std::` in small code examples because it will simply waste space.
 
 So to print to the console, you simply use a stream called `std::cout`. Since it is a stream, you must use the bitwise shift operators to put things in it. When you put a line into this stream, it can be made of any data type that can be put in a stream. When you print to it, you have to put an end of line charachter (`"\n"` or `std::endl`) at the end of each line or the next thing printed to the console will still be on the same line.
 
@@ -33,3 +33,20 @@ The console will say this:
 
     Hello, World!
     Hello again, World!
+
+### Standard input - getting user input
+
+To get user input, you will have to use the `std::cin` stream and the `std::getline()` method for best results.
+
+To do this, we will first import the `std::string` class. This requires that you put `#include <string>` at the top of your file.
+
+As an example, I will store the user input in a string and then print it back to the person. The code is like so:
+
+    string input;
+    getline(cin, input);
+
+The first line defines a string called input where we will store the user input. To get the input, we use `std::getline()` to take the next line from `std::cin` and store it in `input`. To print it to the user you would simple use `cout << input;`.
+
+## How to view my sample program:
+
+If you simply click on this link, you will be taken to a folder containing the code for the program.
