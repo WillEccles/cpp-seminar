@@ -28,6 +28,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	double myDouble = 234.2342;
 	char myByte = -127;
 	long myLong = 1244235234;
+	bool myBool = false;
 
 	cout << "Welcome to data types!\n";
 	cout << "There are many types of data, for example:\n";
@@ -35,8 +36,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "  char: 8-bit, signed. Goes from -128 to 127" << endl;
 	cout << " float: 4-byte decimal, with limits 3.4E +/- 38 (7 digits)" << endl;
 	cout << "double: twice the size of a float, hence the name. 1.7E +/- 308 (15 digits)" << endl;
-	cout << "  long: a longer int (4 bytes): -2,147,483,648 to 2,147,483,647" << endl;
+	cout << "  long: an int (4 bytes): -2,147,483,648 to 2,147,483,647" << endl;
 	cout << " short: a 32-bit int (same as int)" << endl;
+	cout << "  bool: a boolean value (0 or 1)" << endl;
 
 	cout << endl << "Let me print some:" << endl;
 	cout << myInt << endl;
@@ -48,6 +50,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	// to print a real byte from that, we can simply cast it to an int
 	cout << (int) myByte << endl;
 	cout << myLong << endl;
+	cout << myBool << endl;
 
 	system("pause");
 
