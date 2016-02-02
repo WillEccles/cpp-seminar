@@ -36,3 +36,5 @@ For this program, there are some important things to note:
 ## My code
 
 My code is available [here.](https://github.com/WillEccles/cpp-seminar/blob/master/Week-2/Code/main.cpp)
+
+Made proudly in the USA :us:
