@@ -2,7 +2,7 @@
 
 This week focused on data types and scope. For scope, there isn't much to talk about until I get to headers, where I'll expand more on scopes.
 
-This program simply dealt with data types and I will touch on scope. A full write-up will be done by Friday, but for now [here is the code](https://github.com/WillEccles/cpp-seminar/tree/master/Week-2/Code).
+This program simply dealt with data types and I will touch on scope. ~A full write-up will be done by Friday, but for now [here is the code](https://github.com/WillEccles/cpp-seminar/tree/master/Week-2/Code).~ All done! :heavy_check_mark:
 
 ## Data Types
 
