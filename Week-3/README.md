@@ -49,6 +49,16 @@ int doubleThis(int input) {
 int myInt = doubleThis(4); // myInt's value is now 8
 ```
 
+Another kind of method, the simpler kind, would not return anything or have any input. These have a return type of `void`.
+
+```c++
+// returns nothing, takes no input.
+// it simply writes "hello" in the console
+void sayHello() {
+	cout << "hello" << endl;
+}
+```
+
 That pretty well sums up methods. See my exmaple code for more information.
 
 ##Example Code
