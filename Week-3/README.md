@@ -53,4 +53,4 @@ That pretty well sums up methods. See my exmaple code for more information.
 
 ##Example Code
 
-My example code will soon be available. Made proudly in the USA :us:
+My example code can be found [here](https://github.com/WillEccles/cpp-seminar/blob/master/Week-3/Code/main.cpp). Made proudly in the USA :us:
