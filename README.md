@@ -3,9 +3,9 @@ C++ seminar journals.
 
 ##Topics:
 
-- [ ] Standard IO
-- [ ] Data Types and Scope
-- [ ] Functions
+- [x] Standard IO
+- [x] Data Types and Scope
+- [x] Functions
 - [ ] Headers
 - [ ] Casting
 - [ ] Operators
