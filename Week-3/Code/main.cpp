@@ -43,8 +43,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	// add 5 and 6
 	cout << "5 + 6 = " << add(5, 6) << endl;
 
-	cout << badd(5, 6);
-
 	system("pause");
 	return 0;
 }
