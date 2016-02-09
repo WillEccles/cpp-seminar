@@ -20,19 +20,25 @@ So to print to the console, you simply use a stream called `std::cout`. Since it
 
 So, here is how to print a line to the console:
 
-`cout << "Hello, World!" << endl;`
+```c++
+cout << "Hello, World!" << endl;
+```
 
 This will print "Hello, World!" to the console. The `endl` at the end of the line makes sure that if I print another thing, it will print on the next line. For example, if I used `cout << "Hello,";` and then use `cout << " , World!\n";`, the console will just show `Hello, World!`.
 
 In order to print on the next line, I would just add a `\n` or `std::endl` at the end to make it continue, like so:
 
-    cout << "Hello, World!\n";
-    cout << "Hello again, World!" << endl;
+```c++
+cout << "Hello, World!\n";
+cout << "Hello again, World!" << endl;
+```
 
 The console will say this:
 
-    Hello, World!
-    Hello again, World!
+```
+Hello, World!
+Hello again, World!
+```
 
 ### Standard input - getting user input
 
@@ -42,8 +48,10 @@ To do this, we will first import the `std::string` class. This requires that you
 
 As an example, I will store the user input in a string and then print it back to the person. The code is like so:
 
-    string input;
-    getline(cin, input);
+```c++
+string input;
+getline(cin, input);
+```
 
 The first line defines a string called input where we will store the user input. To get the input, we use `std::getline()` to take the next line from `std::cin` and store it in `input`. To print it to the user you would simple use `cout << input;`.
 
