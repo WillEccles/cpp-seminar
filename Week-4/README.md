@@ -42,3 +42,7 @@ void exampleClass::privateMethod() { }
 When you instantiate the exampleClass in some other class (after doing `#include "exampleClass.h"`), it will use this header to determine which methods and members exist.
 
 This means that you no longer have to define a method above another one if you want to use it in the other method. Since they now both exist, they can be used in any order.
+
+## Example code
+
+My example code can be found [here](https://github.com/WillEccles/cpp-seminar/tree/master/Week-4/Code). Proudly made in the USA. :us:
