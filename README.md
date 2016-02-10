@@ -6,7 +6,7 @@ C++ seminar journals.
 - [x] Standard IO
 - [x] Data Types and Scope
 - [x] Functions
-- [ ] Headers
+- [x] Headers
 - [ ] Casting
 - [ ] Operators
 - [ ] Conditional Statement
