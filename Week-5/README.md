@@ -27,3 +27,7 @@ int B = A;
 ```
 
 This code will cause no errors, since the types `int` and `short` are compatible with each other.
+
+## Example Code
+
+My example code can be found [here](https://github.com/WillEccles/cpp-seminar/blob/master/Week-5/Code/main.cpp). Made proudly in the USA. :us:
