@@ -7,7 +7,7 @@ C++ seminar journals.
 - [x] Data Types and Scope
 - [x] Functions
 - [x] Headers
-- [ ] Casting
+- [x] Casting
 - [ ] Operators
 - [ ] Conditional Statement
 - [ ] Loops
