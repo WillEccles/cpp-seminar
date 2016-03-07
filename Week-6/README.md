@@ -47,4 +47,4 @@ std::cout << "5 ^ 2 = " << power;
 
 ## Example Code
 
-Here is my example code, made proudly in the USA. :us:
+My [example code](https://github.com/WillEccles/cpp-seminar/blob/master/Week-6/Code/main.cpp), made proudly in the USA. :us:
