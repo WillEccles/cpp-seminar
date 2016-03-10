@@ -8,7 +8,7 @@ C++ seminar journals.
 - [x] Functions
 - [x] Headers
 - [x] Casting
-- [ ] Operators
+- [x] Operators
 - [ ] Conditional Statement
 - [ ] Loops
 - [ ] Arrays
