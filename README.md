@@ -14,5 +14,4 @@ C++ seminar journals.
 - [ ] Arrays
 - [ ] File IO
 - [ ] Pointers
-- [ ] Debugging/Errors
 - [ ] Final Project
