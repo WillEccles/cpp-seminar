@@ -75,5 +75,5 @@ In this one, it will print the 26 and then stop, since `i` is NOT less than or e
 
 ## Example Code
 
-Here is my example code, made in the USA. :us:
+[Here](https://github.com/WillEccles/cpp-seminar/blob/master/Week-8/code/main.cpp) is my example code, made in the USA. :us:
 
