@@ -10,7 +10,7 @@ C++ seminar journals.
 - [x] Casting
 - [x] Operators
 - [x] Conditional Statement
-- [ ] Loops
+- [x] Loops
 - [ ] Arrays
 - [ ] File IO
 - [ ] Pointers
