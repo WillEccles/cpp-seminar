@@ -39,7 +39,7 @@ Finally, here is how to print ALL of the items in an array. This is somewhat mor
 string words[] = {"this", "is", "cool"};
 
 // let's print everything in the loop
-// make a `for` loop that goes from 0 to the length of the array minus 1.
+// make a 'for' loop that goes from 0 to the length of the array minus 1.
 for (int i = 0; i < 3; i++) {
 	cout << words[i] << endl;
 }
