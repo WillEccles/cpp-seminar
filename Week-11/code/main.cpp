@@ -21,7 +21,9 @@ int _tmain(int argc, _TCHAR* argv[])
 		// this is good because any line that doesn't match this pattern will be ignored
 		cout << key << " is a(n) " << value << endl;
 	}
-
+	
+	file1.close();
+	
 	cout << endl;
 
 	// here is another way:
@@ -31,7 +33,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	while (getline(file2, line)) {
 		cout << "\"" << line << "\"" << endl;
 	}
-
+	
+	file2.close();
+	
 	cout << endl;
 
 	// next let's write to another file
@@ -39,7 +43,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	// this works the same as writing to the cout stream since fstream is a file stream
 	for (int i = 1; i <= 30; i++) {
-		// another thing is that if you run this again, line 42 will set the stream to position 0
+		// another thing is that if you run this again, line 38 will set the stream to position 0
 		// this means that if you write something new, it will overwrite the file
 		// to prevent this, you have to read from the file and then add to the end of that and then..
 		//    ..write all of that to the file
@@ -49,7 +53,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	// IMPORTANT NOTE: if the file doesn't exist, there is no error - it just skips the instructions
 
 	cout << "Finished writing to file!" << endl << endl;
-
+	
+	file3.close();
+	
 	system("pause");
 
 	return 0;
