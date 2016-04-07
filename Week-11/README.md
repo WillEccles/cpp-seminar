@@ -103,4 +103,4 @@ This code works just how it looks. The `outfile` works just like `cout` when you
 
 # Example code
 
-You can view my example [here](code/main.cpp). Made in the USA. :us:
+You can view my example [here](code/). Made in the USA. :us:
