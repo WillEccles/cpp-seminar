@@ -12,6 +12,6 @@ C++ seminar journals.
 - [x] Conditional Statement
 - [x] Loops
 - [x] Arrays
-- [ ] File IO
+- [x] File IO
 - [ ] Pointers
 - [ ] Final Project
