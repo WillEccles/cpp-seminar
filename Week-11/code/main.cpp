@@ -43,7 +43,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	// this works the same as writing to the cout stream since fstream is a file stream
 	for (int i = 1; i <= 30; i++) {
-		// another thing is that if you run this again, line 38 will set the stream to position 0
+		// another thing is that if you run this again, line 42 will set the stream to position 0
 		// this means that if you write something new, it will overwrite the file
 		// to prevent this, you have to read from the file and then add to the end of that and then..
 		//    ..write all of that to the file
