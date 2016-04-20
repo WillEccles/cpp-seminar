@@ -13,5 +13,5 @@ C++ seminar journals.
 - [x] Loops
 - [x] Arrays
 - [x] File IO
-- [ ] Pointers
+- [x] Pointers
 - [ ] Final Project
