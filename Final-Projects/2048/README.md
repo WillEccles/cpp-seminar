@@ -26,6 +26,10 @@ First, it picks two random boxes and puts either a 2 or a 4 there, with a higher
 
 This class handles all the logic for the game. It will load the game when you start, handles all key presses, and so on.
 
+**The logic:**
+
+There is an array of arrays (actually, I used vectors, but close enough - see [here](code/main.cpp#L39)) that is 4x4, which makes up the grid of numbers. Each number from 2<sup>1</sup> (2) to 2<sup>11</sup> (2048) has a defined color in a different list (see [here](code/main.cpp#L41)). First, it loads an old game from the file, or, if none was there, it makes a new one. It will then put a 2 or a 4 (3:1 odds for 2, 1:3 for 4 - code for that is [here](code/main.cpp#L443)) in two random tiles, and from there you just use the arrow keys to move the numbers around. This works just like the phone app, so you just play it like that. Each time you move the tiles, it will check to see which can move and which can't. If none can, you lose. If you can, it will move those that can and will combine those that can. The score (the total of all the tiles) is also counted, and then printed at the top of the screen in the color of the hightest tile on the screen. If you get to 2048, you win!
+
 ## `IOManager.h` & `IOManager.cpp`
 
 This class handles all IO operations, including file IO. The reason this class was invented was so that I could use it in other projects and have access to the same methods everywhere. I am currently making a library for myself that contains all of my custom classes, and you can find that [here](https://github.com/WillEccles/wrestd).
