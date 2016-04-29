@@ -2,6 +2,8 @@
 
 This week, I will do my best to explain a fairly difficult/complicated/confusing C feature called pointers. These are useful, and can be used in a lot of ways.
 
+**If this explanation is not good enough, I recommend reading [this one](http://www.cplusplus.com/doc/tutorial/pointers/).**
+
 ## What is a pointer?
 
 A pointer is a type of variable, in a way. Instead of saying to the computer, "Hey! I'm an int! My value is 42!" it says, "Hey! Look over there! That's an int!" Okay, so maybe it's not a "type of variable," per se, but it's percieved as one in your mind, probably. They're called pointers because they point to the address of a variable in memory. I'll explain that below.
