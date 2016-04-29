@@ -94,7 +94,7 @@ mystring[0] // h
 This is exactly the same as doing this:
 
 ```c++
-*(foo) // h
+*(mystring) // h
 ```
 
 Why are these the same? Another example may help you with that:
