@@ -54,3 +54,9 @@ Examples:
 ```
 
 Funny enough, each one of these numbers, 0-F, represents a *nybble*, which is half of a *byte*, which is 8 bits. The nybble is just 4 bits. An F represents a full `1111`, and a 0 is a `0000`. Each in between is represented here too. If you want to see this in action, go to the Windows Calculator app and do `view > programmer`. Now, choose the *hex* option on the left and click the F button. You'll see the first nybble from the right (since this is all left to right) become `1111`.
+
+**So why was this created?**
+
+The answer is probably simpler than you think. Back when computers were first being made more powerful and RAM was starting to add up to kilobytes and kilobytes (maybe even megabytes!), they needed a way to reach *every* address in memory without making numbers that are enourmous. With the hex system, it is easily comparable to binary, which the computer understands very well, and large numbers take up much smaller spaces than its decimal counterpart. Make sense now?
+
+## How to use these in C++ (WIP)
