@@ -60,3 +60,45 @@ Funny enough, each one of these numbers, 0-F, represents a *nybble*, which is ha
 The answer is probably simpler than you think. Back when computers were first being made more powerful and RAM was starting to add up to kilobytes and kilobytes (maybe even megabytes!), they needed a way to reach *every* address in memory without making numbers that are enourmous. With the hex system, it is easily comparable to binary, which the computer understands very well, and large numbers take up much smaller spaces than its decimal counterpart. Make sense now?
 
 ## How to use these in C++ (WIP)
+
+First we will talk about hex in C++, since it is built in and supported as literals, meaning you can actually write the hexadecimal integer instead of using some fancy thing to convert. With binary, you can't just write `001001010`, since it will see this as `1,001,010`, since the zeroes can just be removed since they are leading zeroes and are therefore unnecessary.
+
+**Hex in C++**
+
+First of all, you can define a plain old `int` with its value as a hexadecimal literal, as long as you have the `0x` prefix. For example, let's make an `int` equal to 15 (F):
+
+```c++
+int myhex = 0xF
+```
+
+When you print this to the console, it will write this as `15`, which is not what you want if you just want to see the value. Fortunately, you can use the built-in `to_string()` method to take care of this. I'll let you figure that out on your own.
+
+How can you convert from an integer in decimal format to a string in hexadecimal format? This seems rather difficult! Here is a method that will do it:
+
+```c++
+string toHex(int input) {
+	const char* alpha = "0123456789ABCDEF"; // all the digits it can have
+	int r = input % 16;
+	string result;
+	if (input - r == 0) {
+		result = alpha[r];
+	} else {
+		result = toHex((input - r)/16) + alpha[r];
+	}
+	return result;
+}
+```
+
+I will not explain how this code works in depth, since you can figure it out if you read it closely. I will explain, however, that for each digit 0-15, we can go through `alpha` and the number or letter at that index will be the hex equivalent. Here is an example of using this to print a hex string, both with and without the `0x` prefix.
+
+```c++
+int main() {
+	std::cout << "15 = " << toHex(15) << std::endl; // "15 = F"
+	std::cout << "15 = 0x" << toHex(15) << std::endl; // "15 = 0xF"
+	return 0;
+}
+```
+
+**Binary in C++**
+
+(WIP)
