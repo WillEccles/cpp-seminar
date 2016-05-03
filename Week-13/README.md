@@ -121,7 +121,7 @@ string toBin(int input) {
 
 Since you use this method the same way, I feel that a demonstration is not necessary, and that I won't have to show you how to use it. All you need to know is that if you try `toBin(420);` and the result is *not* `110100100`, you did something wrong.
 
-## Converting to any base in C++?
+## Converting to any base in C++
 
 This is extremely easy to do, since you use a slightly adapted version of the previous methods we used. Here it is, and it will go all the way up to base 36.
 
