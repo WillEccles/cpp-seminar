@@ -101,4 +101,42 @@ int main() {
 
 **Binary in C++**
 
-(WIP)
+The way that you convert an integer to binary is the same as hex, in fact, it's the same as any base other than 10, which is our normal base (since it's 0-9). You just have to replace every 16 with 2, since binary is base 2, and you change your `alpha` to `"01"`. However, since it uses the same numbers, you could just leave it as `"0123456789ABCDEF"`, since it will still only use the first two.
+
+So, here is the method that I used to convert from an integer to a binary string:
+
+```c++
+string toBin(int input) {
+	const char* alpha = "01"; // all the digits it can have
+	int r = input % 2;
+	string result;
+	if (input - r == 0) {
+		result = alpha[r];
+	} else {
+		result = toBin((input - r)/2) + alpha[r];
+	}
+	return result;
+}
+```
+
+Since you use this method the same way, I feel that a demonstration is not necessary, and that I won't have to show you how to use it. All you need to know is that if you try `toBin(420);` and the result is *not* `110100100`, you did something wrong.
+
+## Converting to any base in C++?
+
+This is extremely easy to do, since you use a slightly adapted version of the previous methods we used. Here it is, and it will go all the way up to base 36.
+
+```c++
+string toBase(int input, int base) {
+	const char* alpha = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int r = input % base;
+	string result;
+	if (input - r == 0) {
+		result = alpha[r];
+	} else {
+		result = toBase((input - r)/base, base) + alpha[r];
+	}
+	return result;
+}
+```
+
+Keep in mind, you will need to do some error handling in case the user puts in a base greater than 36.
