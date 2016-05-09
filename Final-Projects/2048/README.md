@@ -6,8 +6,6 @@ It can save your game, load your game, etc.
 
 You use the arrow keys to control the game.
 
-*(work in progress)*
-
 ### Files in this project:
 
 *(Click on a file name to view its code, or scroll below for more information.)*
