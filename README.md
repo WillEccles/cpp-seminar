@@ -14,4 +14,4 @@ C++ seminar journals.
 - [x] Arrays
 - [x] File IO
 - [x] Pointers
-- [ ] Final Projects (this one will take multiple journals, since there are multiple programs)
+- [x] Final Projects (this one will take multiple journals, since there are multiple programs)
