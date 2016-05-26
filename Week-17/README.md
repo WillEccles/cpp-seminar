@@ -74,4 +74,8 @@ void printBoth(Type1 thing1, Type2 thing2) {
 
 As you can see, I want two different types. These can be the same type, but if they aren't, this will still handle it.
 
+## Summary
+
+Templates are an extremely useful tool when you are programming which can be used to remove a whole bunch of overloaded methods. They can make debugging a little more difficult, however.
+
 <sup>Made proudly in the USA. :us:</sup>
