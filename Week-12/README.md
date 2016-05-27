@@ -33,7 +33,7 @@ int main() {
 
 // pretend this is usable from main, even though it's defined after	
 void double(int a) {
-	// this will set the valur of mynum to (2 * mynum) when I use it
+	// this will set the value of mynum to (2 * mynum) when I use it
 	&a = 2 * a;
 	// "go to the address of a and directly change it to 2 times a"
 }
