@@ -35,6 +35,6 @@ int main() {
 }
 ```
 
-This code works just right. However, what happens when I put the other input back in?
+This code works just right. However, what happens when I put the other input back in? I would explain this to here, but the problem is that we have Visual Studio 2010 - which doesn't support C++11, and therefore makes all of this work much harder. **Let it be known, however, that you definitely can just use C++ to do this with unmodified input.**
 
-*To be continued.*
+Realistically, however, I would just use Excel to do this.
