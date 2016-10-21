@@ -78,11 +78,11 @@ char * mystring = "hello";
 
 How come the pointer to a char works the same as an array of them? This is somewhat hard to explain, but here we go:
 
-Think of each `[]` as a single spot in memory. The number above it is the address of the box, and the number in it is, well, the value at that address.
+Think of each `[]` as a single spot in memory. The number above it is the address of the box, and the number in it is, well, the value at that address. `'\0'` is a special character called the null-terminator. This is automatically added at the end of a string to tell the computer to stop reading the string there. Thus, when defining a string like `char thing[6] = "hello"`, you should set the length (`6` here) to n+1, where n is the length of the string. If you don't, there will be problems, since it has nowhere to store the null character.
 
 ```
  1000   1001   1002   1003   1004   1005
-[ 'h' ][ 'e' ][ 'l' ][ 'l' ][ 'o' ][ '\n' ]
+[ 'h' ][ 'e' ][ 'l' ][ 'l' ][ 'o' ][ '\0' ]
 ```
 
 Using the `char*` sets the value of `mystring` to the first address of the letters, so `mystring` is not `"hello"` or `'h'`, it's value is `1000`. To access the first letter of `mystring`, you'd usually do this:
