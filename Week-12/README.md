@@ -106,5 +106,48 @@ mystring[4] // o
 
 So why does this work, again? The first one says to grab the 5th element of the array. It does. But the second one looks kinda funny... See, the value of `mystring` is the address of the first element, which in this example is 1000. So in the parentheses, I use `mystring + 4`, which would be 1004. Then I use the dereference operator, `*`, to say, "the value at the address (1004)," which would be 'o'.
 
+## A more complex example:
+
+Say we have a class that contains a string and has a method to update it:
+
+```c++
+class strClass {
+	std::string myStr;
+	public:
+		strClass(std::string s): myStr(s) {}
+		void setStr(std::string s) {myStr = s;}
+		std::string getStr() {return myStr;}
+};
+```
+
+Now, say we have another class which contains a pointer to a `strClass`, and updates the `string` in the instance it's pointing to:
+
+```c++
+class updater {
+	strClass *sClass;
+	public:
+		updater(strClass &sC) {sClass = &sC;}
+		void updateStr(std::string newStr) {sClass->setStr(newStr);}
+};
+```
+
+Note that I used a `->` instead of a `.` to access the `setStr` method in `sClass`. This is because you have to use this operator to access the parts of a pointer instead of a period. It's just how it is.
+
+Now here is our main:
+
+```c++
+int main(void) {
+	strClass s(std::string("this is my string"));
+	std::cout << s.getStr() << std::endl; // prints "this is my string"
+	updater u(s);
+	u.updateStr(std::string("this is my new string"));
+	std::cout << s.getStr() << std::endl; // prints "this is my new string"
+
+	return 0;
+}
+```
+
+Notice how `u` contains a pointer to `s`, and so setting the pointer's string directly updates `s`'s. This is because `u` contains a reference to `s`, even though it's defined elsewhere. Interesting, eh?
+
 # Example code
 My example code can be found [here](code/main.cpp). Made in the USA. :us:
