@@ -149,5 +149,9 @@ int main(void) {
 
 Notice how `u` contains a pointer to `s`, and so setting the pointer's string directly updates `s`'s. This is because `u` contains a reference to `s`, even though it's defined elsewhere. Interesting, eh?
 
+## Smart Pointers
+
+It should be noted that since C++11, there are a bunch of standard smart pointers that manage memory for you. `std::unique_ptr`, `std::shared_ptr`, etc.
+
 # Example code
 My example code can be found [here](code/main.cpp). Made in the USA. :us:
